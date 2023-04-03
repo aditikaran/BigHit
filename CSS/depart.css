@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Edu+NSW+ACT+Foundation:wght@500&family=Indie+Flower&family=Kalam&family=Kavoon&family=Lobster&family=Poppins:ital,wght@0,300;0,400;1,500;1,700&family=Satisfy&family=Source+Code+Pro:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Edu+NSW+ACT+Foundation:wght@500&family=Indie+Flower&family=Kalam&family=Kavoon&family=Lobster&family=Mukta:wght@500&family=Poppins:ital,wght@0,300;0,400;1,500;1,700&family=Satisfy&family=Source+Code+Pro:ital,wght@1,800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+#navbar{
+    /* background-color: lightgreen; */
+    position:fixed;
+    width:100%;
+}
+.main_nv {
+    /* background-color: red; */
+    /* max-width: 100%; */
+    /* min-height: auto; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+.nav_logo{
+    padding: 25px;
+}
+.nav_right{
+    padding-top: 25px;
+}
+.nav_right ul li{
+    
+    display: inline-block;
+    list-style-type: none;
+    padding: 25px;
+}
+
+.nav_right ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_right ul li a:hover{
+    border-bottom: 2px solid black;
+}
+.active{
+    border-bottom: 3px solid white;
+}
+.banner img{
+    width: 100%;
+}
+.hiring-steps h1{
+    /* background-color: red; */
+    padding-left: 10%;
+    margin-top: 10%;
+    font-size: 50px;
+}
+.hiring-steps p{
+    font-size: 35px;
+    font-weight: bold;
+    /* text-align: center; */
+}
+.hiring{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-bottom: 30%; */
+}
+.hiring h1{
+   font-size:35px;
+}
+.container_1{
+    /* background-color: aqua; */
+    padding-top: 5%;
+    padding-left: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    max-width: 400px;
+    min-height: 300px;
+    padding: 10px 20px;
+}
+.card-text{
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: center;
+}
+.hiring-bottom{
+    padding: 5%;
+}
+.card i{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.card p{
+    padding-top: 10%;
+}
+.container-2{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.text-1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+}
+.container-2 h2{
+    /* background-color: red; */
+    padding-left: 10%;
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+}
+.container-2 ul li{
+    padding-left: 5%;
+}
+.cont-2{
+    line-height: 2rem;
+}
+.section-heading{
+    /* background: red; */
+    padding: 5%;
+    font-family: 'Alkatra', cursive;
+    text-align: center;
+    font-size: 70px;
+    background-color: yellow;
+    color: green;
+}
+.department{
+    /* margin: 10px; */
+    /* background-color: red; */
+    height: auto;
+    /* background-color: red; */
+}
+
+.container-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     position: relative;
+}
+.image{
+    transition: all 0.3s;
+    padding: 20px;
+}
+.image:hover{
+    transform: translateY(10px);
+}
+.image img{
+    max-width: 100%;
+    border-radius: 20%;
+    border: 5px solid black;
+    cursor: pointer;   
+}
+.slide{
+    /* background-color: red; */
+    margin-top: 10%;
+    padding: 10px;
+}
+.slide h1{
+    font-family: 'Alkatra', cursive;
+    font-size: 40px;
+}
+.slide p{
+    font-size: 30px;
+    font-family: 'Alkatra', cursive;
+}
+#panel,
+#flip{
+    /* padding: 4%; */
+    text-align: center;
+    background-color: palevioletred;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+#flipUp{
+    text-align: center;
+}
+#panel,
+#panel-toggle{
+    padding: 50px;
+    display:none;
+}
+.copywrite p{
+    /* background-color: red; */
+    padding-top: 10%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* .image:hover .name{
+    opacity: 0.8s;
+} */
+
+
+/* @media screen and(max-width:1200px) {
+    .container-3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+    }
+} */
