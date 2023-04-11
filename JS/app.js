@@ -1,4 +1,6 @@
 // alert();
+let loginform = document.getElementById("loginform")
+
 let username = document.getElementById('username');
 let username_error = document.getElementById('error1')
 
@@ -21,6 +23,8 @@ let no_err_mail = true;
 let no_err_pwrd = true;
 let no_err_cpwd = true;
 let no_err_phn = true;
+
+
 
 username.addEventListener('input', usernameCheck)
 function usernameCheck(){
@@ -84,7 +88,7 @@ function passwordCheck()
     }
     else if(!validpwrd.test(data3))
     {
-        pwrd_error.innerHTML= "Atleat 1 small, 1 capital, 1 specail and 1 number,min length"
+        pwrd_error.innerHTML= "Atleat 1 small, 1 capital, 1 specail and 1 number,min length-8"
         no_err_pwrd= false;
     }
     else{
@@ -130,7 +134,7 @@ function phnCheck(){
         no_err_phn = false;
     }
     else if(!validphn.test(phn_data)) {
-        phn_error.innerHTML = '**Invalid phone number';
+        phn_error.innerHTML = '**Invalid phone number, 10 digit is must';
         no_err_phn = false;
     }
     else{
@@ -139,15 +143,35 @@ function phnCheck(){
     }
 }
 
-$("submitBtn").click(function () 
+loginform.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+
+if (username.value == "" || email.value =="" || pwrd.value == "" || cpwd.value == "" || phn.value == ""){
+    alert("Ensure you input value in all the fields!");
+}
+else{
+    alert("This form has been successfully submitted!");
+    console.log('this form has a username');
+
+    username.value = "";
+    email.value = "";
+    pwrd.value == "";
+    cpwd.value == "";
+    phn.value == "";
+
+}
+});
+
+// $("submitBtn").click(function () 
     
-{
-    let err_name = usernameCheck();
-    let err_phn = phnCheck();
-    let err_mail = emailCheck();
-    let err_pwd = passwordCheck();
-    let err_cpwd = cpwdCheck();
-})
+// {
+//     let err_name = usernameCheck();
+//     let err_phn = phnCheck();
+//     let err_mail = emailCheck();
+//     let err_pwd = passwordCheck();
+//     let err_cpwd = cpwdCheck();
+// })
 
 
 // if(err_name===false || err_mail===false || err_pwd===false || err_cpwd===false || err_phn===false)
@@ -163,7 +187,7 @@ $("submitBtn").click(function ()
 // }
 
 
-// $ ('input').click(function(){
+// $ ('.sumbitBtn').click(function(){
 //     alert("Your data have been successfully submitted")
 //  }
 //  )

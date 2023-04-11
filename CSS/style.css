@@ -289,18 +289,66 @@ body {
 
 }
 
-.text_2 {
+.text_2 h1{
     /* background-color: brown; */
     color: white;
     text-align: center;
     padding-top: 10%;
+    font-size: 60px;
+    font-weight: bolder;
     /* margin-top: 20%; */
     letter-spacing: 2rem;
 }
+.back{
+    position: relative;
+}
+.back button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: right;
+    /* text-align: center; */
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 9px #999;
+    position:absolute;
+     top:0;
+      right:50px;
+    /* margin: auto; */
+}
 
-.bts_top {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(1, 1, 1, 0.65)), url('https://w0.peakpx.com/wallpaper/893/1000/HD-wallpaper-bts-logo-army-purple.jpg');
-    line-height: 2em;
+.back button:hover {
+    background-color: palevioletred;
+
+}
+
+.back button:active {
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+button a{
+    color: white;
+    text-decoration-line: none;
+    list-style-type: none;
+}
+
+/* background-color: palevioletred; */
+/* border-radius: 40%; */
+.text{
+   color: white;
+   font-size: 30px;
+   padding: 80px 0px;
+   text-align: center;
+   font-family: 'Alkatra', cursive;
+   letter-spacing: 1rem;
+}
+.bts_top{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(1, 1, 1, 0.65)), url('https://w0.peakpx.com/wallpaper/893/1000/HD-wallpaper-bts-logo-army-purple.jpg'); */
+    font-size: 30px;
     margin: auto;
     padding: 20px;
     color: white;
@@ -308,59 +356,63 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.btsimg{
+/* .bts_top p{
+    line-height: 2em;
+    font-size: 50px;
+
+} */
+
+.padding {
+    padding: 40px 80px;
+}
+
+.btsimg {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     font-family: 'Alkatra', cursive;
     color: white;
-    margin-top: 10%;
-    /* background-color: red; */
-    height: auto;
-    display: flex;
-    padding: 20px 20px;
-    flex-wrap: wrap;
+    text-align: center;
 }
-.namjoon{
+
+.bts-right {
     /* background-color: blue; */
-    flex-wrap: wrap;
-    padding: 40px;
-    width: 40%;
-    height: auto;
-}
-.bottom{
-    flex-wrap: wrap;
-    margin-top: 20px;
+    /* width: 100%; */
     display: flex;
-    padding-left: 100px;
-}
-.wwh{
     flex-wrap: wrap;
-    margin-left: 50px;
-    /* background-color: green; */
+    padding-top: 20px;
+    /* justify-content: space-evenly; */
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
 
-}
-.j-hope{
-    margin-left: 50px;
-
-}
-.v{
-    flex-wrap: wrap;
-    /* background-color: blueviolet; */
-    margin-left: 50px;
-}
-.bts-text_1{
+.bts-text1 {
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
 }
-.bts-text{
+
+.wwh {
+    padding: 10px 20px;
+}
+
+.j-hope {
+    padding: 10px 20px;
+}
+
+.v {
+    /* background-color: blue; */
+    padding: 10px 20px;
+}
+
+.bts-text {
     text-align: center;
     font-size: 15px;
     font-weight: bolder;
-}
-.cat,
-.playboy,
-.mochi{ 
-    flex-wrap: wrap;
-    padding-top: 60%;
 }
 
 .bts {
@@ -398,39 +450,45 @@ body {
     font-size: 15px;
     line-height: 2em;
 }
-.profile-text{
+
+.profile-text {
     /* background-color: red; */
     color: white;
     margin-top: 10%;
     font-family: 'Alkatra', cursive;
     font-size: 60px;
-    text-align: center;    
+    text-align: center;
 }
-.profile{
+
+.profile {
+    /* background-color: red; */
     font-family: 'Alkatra', cursive;
     display: flex;
     /* flex-wrap: wrap; */
     padding: 20px 20px;
 }
-.comp-cntnr img{
+
+.comp-cntnr img {
     padding: 20px;
     max-width: 400px;
     /* min-height: 200px; */
 }
+
 .comp-cntnr {
     position: relative;
     width: 50%;
-  }
-  .comp-img{
+}
+
+.comp-img {
     opacity: 1;
     /* display: block; */
     width: 100%;
     height: auto;
     transition: .5s ease;
     /* backface-visibility: hidden; */
-  }
-  
-  .middle {
+}
+
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -439,23 +497,25 @@ body {
     transform: translate(-50%, -50%);
     /* transform: translate(-50%, -50%); */
     text-align: center;
-  }
-  .comp-cntnr:hover .comp-img {
+}
+
+.comp-cntnr:hover .comp-img {
     opacity: 0.3;
-  }
-  
+}
+
 .comp-cntnr:hover .middle {
     opacity: 1;
     border: 2px black solid;
     padding: 20px;
- }
+}
+
 .comp-text {
     /* background-color: #070808; */
     color: white;
     font-size: 16px;
     /* padding: 16px 32px; */
-  }
-  
+}
+
 .text_2 a:hover {
     border-bottom: 2px solid white;
 }
@@ -598,8 +658,10 @@ body {
 }
 
 .text_6 {
+    font-family: 'Alkatra', cursive;
+    /* color: white; */
     text-align: center;
-    font-size: 30px;
+    font-weight: bolder;
     margin: auto;
 }
 
@@ -625,7 +687,7 @@ body {
 
 .text_8,
 .text_9,
-.text_10{
+.text_10 {
     /* max-width: 50px; */
     /* background-color: red; */
     /* color: aquamarine; */
@@ -654,12 +716,14 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-.text_7{
+
+.text_7 {
     color: white;
     font-size: 25px;
     font-weight: bolder;
     padding: 30px;
 }
+
 .form {
     max-width: 500px;
     margin: auto;
@@ -699,12 +763,12 @@ input[type='password'] {
 
 input[type='message'] {
     width: 100%;
-    min-height: 100px;
-    padding: 5px 10px;
-    margin: 3px 0px;
+    min-height: 40px;
+    padding: 0px 10px;
+    /* margin: 3px 0px; */
 }
 
-input[type='submit'] {
+/* input[type='submit'] {
     width: 60%;
     background-color: purple;
     color: black;
@@ -713,10 +777,24 @@ input[type='submit'] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 
 input[type='submit']:hover {
     background: rgb(166, 48, 154);
+}
+.form button{
+    width: 60%;
+    height: 40px;
+    background-color: purple;
+    color: black;
+    padding: 5px 10px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form button:hover{
+    background: rgb(166, 48, 154); 
 }
 
 .container {
@@ -817,19 +895,40 @@ input[type='submit']:hover {
         flex-wrap: wrap;
         flex-direction: column;
     } */
-    .profile{
+    .main {
+        width: 100%;
+    }
+
+    /* .profile{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin-right: 20%;
         align-items: center;
         align-self: center;
+    } */
+    .profile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 30%;
     }
+
     .abt_bts {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
+
+    .bts-right {
+        margin-left: 20%;
+    }
+
+    /* .bts-right .v{
+        flex-direction: row;
+       } */
 
     .txt_cont-top,
     .txt_cont-mid,
@@ -841,18 +940,47 @@ input[type='submit']:hover {
     .txt_cont-mid .text_4 {
         order: -1;
     }
+
+    .text_4 {
+        margin-left: 20%;
+    }
+
+    /* .profile{
+        margin-left: 200px;
+    } */
+    .namjoon {
+        margin: 0px 40px;
+    }
+
+    .bts-text_1 {
+        margin-left: 150px;
+    }
+
+    .bottom {
+        margin: 0px 40px;
+    }
+
 }
 
 
 
 @media screen and(max-width:767px) {
-    .profile, .careers{
+    .main {
+        width: 100%;
+
+    }
+
+    /* .v{
+        flex-direction: row;
+    } */
+    .careers {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
         align-self: center;
     }
+
     .abt_bts {
         display: flex;
         justify-content: center;
@@ -869,23 +997,35 @@ input[type='submit']:hover {
         padding-top: 70px;
         /* background-color: purple; */
         align-items: center;
-
         text-align: center;
     }
+
+    .bts-right {
+        margin-left: 20%;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
-    .profile{
+    .main {
+        width: 100%;
+    }
+
+    /* .profile{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
         align-self: center;
-    }
+    } */
     .column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
+    }
+
+    .bts-right {
+        margin-left: 20%;
     }
 }
 
